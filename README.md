@@ -1,12 +1,19 @@
 # Quibble
-Discord weather and game bot. Invite_link : https://discord.com/oauth2/authorize?client_id=1247624200655601686&amp;permissions=843961281600&amp;scope=bot
 
-;{command} :: private messaging.
+Quibble is your friendly Discord bot that brings the power of weather forecasting and engaging games right to your server!
 
-\>{command} :: channel messaging.
+## Features
 
-\>weather {location} :: get the weather at your favorite place.
-      fetches weather conditions of the specified place using weather api in a json format, which is then unwrapped into python object and send as an embedded message to the channel from which request was send
+* **Weather on Demand:** Get real-time weather information for any location with the `>weather {location}` command. Quibble uses a powerful weather API to fetch data and present it in a clear and informative way.
+* **Tic Tac Toe Challenge:** Feeling competitive? Challenge your friends to a classic game of Tic Tac Toe using the `>ttt {user_id}` command. Quibble will handle the game logic and display the board directly within your Discord channel.
 
-\>ttt {user_id} :: challenge a friend in the channel for a Tic Tac Toe match.
-      Python creates a game object containing current user, opponent and ttt layout, which is added to a hashtable mapping message id and game object. On giving reaction mentioned by the bot, the corresponding square is updated via array updation which is joined to form the display string(ttt grid) in the channel. Using a hashtable avoids multiple users accessing the same instance of the game. 
+## Using Quibble
+
+* **Private vs. Public Commands:**
+    * Commands prefixed with `;` are for private messaging, keeping things discreet.
+    * `>` commands are for public channels, perfect for group fun.
+* **Efficient Game Management:** Quibble utilizes a hash table to store game instances, ensuring each Tic Tac Toe match is unique to the players involved.
+
+## Invite Quibble
+
+Invite Quibble to your Discord server using the following link (**Manage Messages** permission required):
