@@ -1,9 +1,9 @@
 # Quibble
 Discord weather and game bot. Invite_link : https://discord.com/oauth2/authorize?client_id=1247624200655601686&amp;permissions=843961281600&amp;scope=bot
 
-;{command} :: private messaging
-\n
-\>{command} :: channel messaging
+;{command} :: private messaging.
+
+\>{command} :: channel messaging.
 
 \>weather {location} :: get the weather at your favorite place.
       fetches weather conditions of the specified place using weather api in a json format, which is then unwrapped into python object and send as an embedded message to the channel from which request was send
