@@ -16,4 +16,5 @@ Quibble is your friendly Discord bot that brings the power of weather forecastin
 
 ## Invite Quibble
 
-Invite Quibble to your Discord server using the following link (**Manage Messages** permission required):
+Invite Quibble to your Discord server using the following link:
+            https://discord.com/oauth2/authorize?client_id=1247624200655601686&permissions=843961281600&scope=bot
