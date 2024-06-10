@@ -24,6 +24,19 @@ def weath(location : str) :
 
     return discord.Embed(title="City not found", description='', color=0xff69b4)
 
+def wisd() : 
+    wurl = 'https://zenquotes.io/api/random'
+    response = requests.get(wurl)
+    response_json = json.loads(response.text)
+
+    if response.status_code == 200:
+        quote = response_json[0]['q']
+        author = response_json[0]['a']
+        print(quote)
+        print(author)
+        return discord.Embed(title = str(quote), description = str(author), color=0xff69b4)
+    return discord.Embed(title="SomeErrorLol", description='', color=0xff69b4)
+
 def embedded(message):
   title = message
   description = ""
@@ -45,6 +58,8 @@ def get_response (uinput: str):
         response = 'See ya!'
     elif uinput.startswith('weather ') :
         return weath(uinput[8:])
+    elif 'wisdom' in uinput : 
+        return wisd()
     elif 'roll dice' in uinput :
         ran = randint(0,5)
         dice = ""
