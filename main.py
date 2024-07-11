@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from discord import Intents, Client, Message
 from responses import get_response, embedded
-import discord
+import discord 
 from tiles import blank, cross, circle, one, two , three, four, five , six , seven, eight, nine
 
 load_dotenv()
